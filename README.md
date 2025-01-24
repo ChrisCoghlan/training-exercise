@@ -11,6 +11,7 @@ training-exercise
 │   └── modules
 │       └── module.psm1  # PowerShell module with custom functions
 ├── README.md            # Documentation for the project
+├── Sample-Output.out    # Output generated when run against provided logs.log
 └── .gitignore           # Files and directories to ignore by Git
 ```
 
@@ -50,3 +51,4 @@ Application was developed and tested locally for script functionality. Additiona
 ## Suggested Improvements
 1. The application currently matches jobs based on description, which in the sample file are unique and run only once. To improve reliability, and to capture what happens if a job runs more than once, the match should be on both description and PID.
 2. The summary could also print which jobs had errors, warnings or had got stuck.
+3. Pauses could be added between each results section to improve the presentation to the end user.
