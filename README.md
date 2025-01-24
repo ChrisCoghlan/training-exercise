@@ -38,7 +38,7 @@ powershell -ExecutionPolicy Bypass -File .\src\main.ps1 -CsvFilePath "C:\path\to
 
 ## Testing Conducted
 Application was developed and tested locally for script functionality. Additional entries were added to the log file to ensure they were correctly identified by the application, examples used:
-
+```
 08:14:20,scheduled task test-stuck, START,62922
 08:14:20,scheduled task test-success, START,15871
 08:18:20,scheduled task test-success, END,15871
@@ -47,7 +47,7 @@ Application was developed and tested locally for script functionality. Additiona
 08:19:35,scheduled task test-warn, END,15873
 08:14:20,scheduled task test-error, START,15879
 08:39:35,scheduled task test-error, END,15879
-
+```
 ## Suggested Improvements
 1. The application currently matches jobs based on description, which in the sample file are unique and run only once. To improve reliability, and to capture what happens if a job runs more than once, the match should be on both description and PID.
 2. The summary could also print which jobs had errors, warnings or had got stuck.
